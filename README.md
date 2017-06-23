@@ -12,6 +12,8 @@ It has no external dependencies, and should be compatible with virtually any fra
 
 ## Demo pages
 
+Demo pages which use GitHub pages
+
 | demo page | source |
 |------|--------|
 |[APITest](https://nwtgck.github.io/EaselJS/examples/APITest.html)|[source](https://github.com/nwtgck/EaselJS/blob/master/examples/APITest.html)|
@@ -57,6 +59,17 @@ It has no external dependencies, and should be compatible with virtually any fra
 |[Transform](https://nwtgck.github.io/EaselJS/examples/Transform.html)|[source](https://github.com/nwtgck/EaselJS/blob/master/examples/Transform.html)|
 |[Transform_simple](https://nwtgck.github.io/EaselJS/examples/Transform_simple.html)|[source](https://github.com/nwtgck/EaselJS/blob/master/examples/Transform_simple.html)|
 |[TwoStages](https://nwtgck.github.io/EaselJS/examples/TwoStages.html)|[source](https://github.com/nwtgck/EaselJS/blob/master/examples/TwoStages.html)|
+
+## Commands to adapt GitHub pages
+
+```sh
+# Copy _assets directory to assets (mv command is also OK)
+$ cp -r _assets assets
+# Move to examples directory
+$ cd examples
+# Replace "../_assets" with "../assets" (this is necessary to load .css files)
+$ ls | grep html | xargs sed -i '' 's/..\/_assets/..\/assets/g' # Replace by destructive way
+```
 
 ## Simple Example
 
