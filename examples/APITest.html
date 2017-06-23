@@ -4,17 +4,17 @@
 
 <title>EaselJS: API Test</title>
 
-<link href="../_assets/css/shared.css" rel="stylesheet" type="text/css"/>
-<link href="../_assets/css/examples.css" rel="stylesheet" type="text/css"/>
-<link href="../_assets/css/prism.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/css/shared.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/css/examples.css" rel="stylesheet" type="text/css"/>
+<link href="../assets/css/prism.css" rel="stylesheet" type="text/css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="http://samaxesjs.googlecode.com/files/jquery.toc-1.1.4.min.js"></script>
-<script src="../_assets/js/prism.js"></script>
+<script src="../assets/js/prism.js"></script>
 
 <script src="../lib/easeljs-NEXT.combined.js"></script>
 <!-- We also provide hosted minified versions of all CreateJS libraries.
   http://code.createjs.com -->
-<script src="../_assets/js/Slider.js"></script>
+<script src="../assets/js/Slider.js"></script>
 
 <script id="editable">
 	var canvasDiv;
@@ -26,7 +26,7 @@
 	function init() {
 		img = new Image();
 		img.onload = layout;
-		img.src = "../_assets/art/daisy.png";
+		img.src = "../assets/art/daisy.png";
 
 		canvasDiv = document.getElementById("canvasDiv");
 
@@ -175,7 +175,7 @@
 		var ss = new createjs.SpriteSheet({ "animations": {
 			"run": [0, 25, "jump", 2],
 			"jump": [26, 63, "run"]},
-											  "images": ["../_assets/art/spritesheet_grant.png"],
+											  "images": ["../assets/art/spritesheet_grant.png"],
 											  "frames": {
 												  "regX": 0,
 												  "regY": 0,

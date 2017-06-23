@@ -5,9 +5,9 @@
 	<title>EaselJS Example: Displaying icons using Sprite and
 		SpriteSheet</title>
 
-	<link href="../_assets/css/shared.css" rel="stylesheet" type="text/css"/>
-	<link href="../_assets/css/examples.css" rel="stylesheet" type="text/css"/>
-	<script src="../_assets/js/examples.js"></script>
+	<link href="../assets/css/shared.css" rel="stylesheet" type="text/css"/>
+	<link href="../assets/css/examples.css" rel="stylesheet" type="text/css"/>
+	<script src="../assets/js/examples.js"></script>
 
 	<script src="../lib/easeljs-NEXT.combined.js"></script>
 	<!-- We also provide hosted minified versions of all CreateJS libraries.
@@ -21,7 +21,7 @@
 	function init() {
 		//find canvas and load images, wait for last image to load
 		iconSheet.onload = handleImageLoad;
-		iconSheet.src = "../_assets/art/spritesheet_icons.png";
+		iconSheet.src = "../assets/art/spritesheet_icons.png";
 	}
 
 	function handleImageLoad() {
@@ -114,7 +114,7 @@
 <div id="content">
 	The original icons.png file, images from <a
 		href="http://thenounproject.com/">the Noun project</a>:<br/>
-	<img src="../_assets/art/spritesheet_icons.png"/>
+	<img src="../assets/art/spritesheet_icons.png"/>
 </div>
 </body>
 </html>

@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<title>EaselJS Example: Graphics Winding</title>
 
-	<link href="../_assets/css/shared.css" rel="stylesheet" type="text/css"/>
-	<link href="../_assets/css/examples.css" rel="stylesheet" type="text/css"/>
-	<script src="../_assets/js/examples.js"></script>
+	<link href="../assets/css/shared.css" rel="stylesheet" type="text/css"/>
+	<link href="../assets/css/examples.css" rel="stylesheet" type="text/css"/>
+	<script src="../assets/js/examples.js"></script>
 
 	<script src="../lib/easeljs-NEXT.combined.js"></script>
 	<!-- We also provide hosted minified versions of all CreateJS libraries.
@@ -32,7 +32,7 @@
 		// Use the same graphics to make another Shape
 		var mask = new createjs.Shape(shape.graphics);
 		// Create a bitmap, and mask it using the compound shape
-		var bmp = new createjs.Bitmap("../_assets/art/flowers.jpg");
+		var bmp = new createjs.Bitmap("../assets/art/flowers.jpg");
 		bmp.mask = mask;
 		stage.addChild(bmp);
 
